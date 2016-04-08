@@ -1,0 +1,26 @@
+{
+  "name": "extdirect-amqp-server",
+  "version": "0.9.1",
+  "description": "Gateway for an ExtJs-Application (client) issueing an ExtDirect-Request to a NodeJs backend (gateway) whereas the requests are first sent to a message-broker using the amqp-protocol and from there to the NodeJs Server. The NodeJs server then returns the callback to the message-broker which then sends it back to the gateway where it is returned as an ExtDirect response to the client. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AppAdaptive/extdirect-amqp-server.git"
+  },
+  "keywords": [
+    "ExtDirect",
+    "MessageBroker",
+    "ExtJs",
+    "Sencha",
+    "RabbitMQ"
+  ],
+  "author": "Regine Rosewich <regine.rosewich@appadaptive.de> (http://appadaptive.de)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/AppAdaptive/extdirect-amqp-server.git)/issues"
+  },
+  "homepage": "https://github.com/AppAdaptive/extdirect-amqp-server.git)#readme"
+}
