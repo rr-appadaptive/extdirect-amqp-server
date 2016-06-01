@@ -10,6 +10,6 @@ extdirect.initRouter = function(config){
 	var serverRouter = new router(config);
 
 	// start the server side Message-Broker, -channel and -queue
-	serverRouter.connectAmqp();
+	serverRouter.connectBroker();
     return serverRouter;
 };
