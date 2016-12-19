@@ -7,9 +7,11 @@ extdirect.initApi = function(config){
 };
 
 extdirect.initRouter = function(config){
-	var serverRouter = new router(config);
-
-	// start the server side Message-Broker, -channel and -queue
-	serverRouter.connectBroker();
-    return serverRouter;
+	var amqpRouter = new router(config);
+	
+	amqpRouter.initAmqpConsumer(amqpRouter);
+	return amqpRouter;
 };
+
+exports.broker = require('./lib/broker');
+
